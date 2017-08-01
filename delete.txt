@@ -1,0 +1,3 @@
+I want to delete it !
+
+delete = 1
