@@ -84,8 +84,23 @@ git stash apply stash@{0}
 git remote [-v]
 
 推送分支到远程
-git push origin dev
+git push origin <本地分支>:<远程分支>
 
 抓取远程dev分支
 git checkout -b dev origin/dev
+
+获取远程分支最新的更新
+git branch --set-upstream dev origin/dev    (no tracking information)
+git pull
+
+打标签
+git tag -a v0.1 -m "xxxxx" <commit id>
+git tag
+git show v0.1
+
+删除标签
+git tag -d v0.1
+git push origin :refs/tags/v0.9
+
+
 
